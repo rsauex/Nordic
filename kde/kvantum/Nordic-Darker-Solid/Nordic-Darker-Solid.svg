@@ -2511,189 +2511,189 @@
      id="g601"
      transform="translate(0.00264425,45.000002)">
     <rect
-       style="fill:#6e6e70"
+       style="fill:#8fbcbb"
        height="10"
        width="10"
        y="290"
        x="320"
        id="menubaritem-pressed-bottom" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="290"
        x="285"
        id="menubaritem-toggled-bottom" />
     <rect
-       style="opacity:0.07999998;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="280"
        x="320"
        id="menubaritem-pressed" />
     <rect
-       style="opacity:0.07999998;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="280"
        x="310"
        id="menubaritem-pressed-left" />
     <rect
-       style="fill:#6e6e70"
+       style="fill:#8fbcbb"
        height="10"
        width="10"
        y="290"
        x="310"
        id="menubaritem-pressed-bottomleft" />
     <rect
-       style="opacity:0.07999998;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="280"
        x="330"
        id="menubaritem-pressed-right" />
     <rect
-       style="fill:#6e6e70"
+       style="fill:#8fbcbb"
        height="10"
        width="10"
        y="290"
        x="330"
        id="menubaritem-pressed-bottomright" />
     <rect
-       style="opacity:0.07999998;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="270"
        x="320"
        id="menubaritem-pressed-top" />
     <rect
-       style="opacity:0.07999998;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="270"
        x="310"
        id="menubaritem-pressed-topleft" />
     <rect
-       style="opacity:0.07999998;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="270"
        x="330"
        id="menubaritem-pressed-topright" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="280"
        x="285"
        id="menubaritem-toggled" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="280"
        x="275"
        id="menubaritem-toggled-left" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="290"
        x="275"
        id="menubaritem-toggled-bottomleft" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="280"
        x="295"
        id="menubaritem-toggled-right" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="290"
        x="295"
        id="menubaritem-toggled-bottomright" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="270"
        x="285"
        id="menubaritem-toggled-top" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="270"
        x="275"
        id="menubaritem-toggled-topleft" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="270"
        x="295"
        id="menubaritem-toggled-topright" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="290"
        x="250"
        id="menubaritem-focused-bottom" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="280"
        x="250"
        id="menubaritem-focused" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="280"
        x="240"
        id="menubaritem-focused-left" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="290"
        x="240"
        id="menubaritem-focused-bottomleft" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="280"
        x="260"
        id="menubaritem-focused-right" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="290"
        x="260"
        id="menubaritem-focused-bottomright" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="270"
        x="250"
        id="menubaritem-focused-top" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="270"
        x="240"
        id="menubaritem-focused-topleft" />
     <rect
-       style="opacity:0.12000002;fill:#ffffff"
+       style="fill:#3b4252;fill-opacity:1"
        height="10"
        width="10"
        y="270"
@@ -2776,6 +2776,11 @@
   <g
      id="g633"
      transform="translate(0.00264425,45.000002)">
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:#292f3a;fill-opacity:1;fill-rule:evenodd"
+       d="m 180,320 h -5 v 5 h 5 z"
+       id="menuitem-separator" />
     <path
        inkscape:connector-curvature="0"
        style="opacity:0.65;fill:#4c566a;fill-opacity:1;fill-rule:evenodd"
@@ -2863,42 +2868,42 @@
      transform="translate(0.00264425,45.000002)">
     <path
        inkscape:connector-curvature="0"
-       style="color:#000000;opacity:1;fill:#2e3440;fill-opacity:0.941176;fill-rule:evenodd"
+       style="color:#000000;opacity:1;fill:#232831;fill-opacity:0.941176;fill-rule:evenodd"
        d="m 0,275 h 5 v 48 H 0 Z"
        id="menu-normal-left" />
     <path
        inkscape:connector-curvature="0"
-       style="color:#000000;opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
+       style="color:#000000;opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"
        d="M 5,270 H 0.0011 l -0.001,5 h 5 z"
        id="menu-normal-topleft" />
     <path
        inkscape:connector-curvature="0"
-       style="opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
+       style="opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"
        d="m 53.0003,270 v 5 h -48 v -5 z"
        id="menu-normal-top" />
     <path
        inkscape:connector-curvature="0"
-       style="opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
+       style="opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"
        d="m 58,275 -3e-4,-4.9989 -5,-0.001 v 5 z"
        id="menu-normal-topright" />
     <path
        inkscape:connector-curvature="0"
-       style="opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
+       style="opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"
        d="m 57.9998,275 h -5 v 48 h 5 z"
        id="menu-normal-right" />
     <path
        inkscape:connector-curvature="0"
-       style="opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
+       style="opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"
        d="m 52.9998,328 h 4.9989 l 10e-4,-5 h -5 z"
        id="menu-normal-bottomright" />
     <path
        inkscape:connector-curvature="0"
-       style="opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
+       style="opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"
        d="m 5.00075,328 3e-4,-5 h 48 l -3e-4,5 z"
        id="menu-normal-bottom" />
     <path
        inkscape:connector-curvature="0"
-       style="opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
+       style="opacity:1;fill:#232831;fill-opacity:1;fill-rule:evenodd"
        d="m 4e-4,323 3e-4,4.9989 5,0.001 v -5 z"
        id="menu-normal-bottomleft" />
     <rect
