@@ -34,28 +34,28 @@
 @define-color insensitive_base_color #{"" +$base_color};
 
 /* widget text/foreground color on backdrop windows */
-@define-color theme_unfocused_fg_color #{"" +$backdrop_fg_color};
+@define-color theme_unfocused_fg_color #{"" +$fg_color};
 
 /* text color for entries, views and content in general on backdrop windows */
 @define-color theme_unfocused_text_color #{"" +$text_color};
 
 /* widget base background color on backdrop windows */
-@define-color theme_unfocused_bg_color #{"" +$backdrop_bg_color};
+@define-color theme_unfocused_bg_color #{"" +$bg_color};
 
 /* text widgets and the like base background color on backdrop windows */
-@define-color theme_unfocused_base_color #{"" +$backdrop_base_color};
+@define-color theme_unfocused_base_color #{"" +$base_color};
 
 /* base background color of selections on backdrop windows */
 @define-color theme_unfocused_selected_bg_color #{"" +$selected_bg_color};
 
 /* text/foreground color of selections on backdrop windows */
-@define-color theme_unfocused_selected_fg_color #{"" + $selected_fg_color};
+@define-color theme_unfocused_selected_fg_color #fff;
 
 /* widgets main borders color */
 @define-color borders #{"" +$borders_color};
 
 /* widgets main borders color on backdrop windows */
-@define-color unfocused_borders #{"" +$backdrop_borders_color};
+@define-color unfocused_borders #{"" +$borders_color};
 
 /* these are pretty self explicative */
 @define-color warning_color #{"" +$warning_color};
@@ -70,12 +70,12 @@
 @define-color base_color #{"" +$base_color};
 @define-color selected_bg_color #{"" +$selected_bg_color};
 @define-color selected_fg_color #fff;
-@define-color unfocused_fg_color #{"" +$backdrop_fg_color};
+@define-color unfocused_fg_color #{"" +$fg_color};
 @define-color unfocused_text_color #{"" +$text_color};
-@define-color unfocused_bg_color #{"" +$backdrop_bg_color};
-@define-color unfocused_base_color #{"" +$backdrop_base_color};
+@define-color unfocused_bg_color #{"" +$bg_color};
+@define-color unfocused_base_color #{"" +$base_color};
 @define-color unfocused_selected_bg_color #{"" +$selected_bg_color};
-@define-color unfocused_selected_fg_color #{"" + $selected_fg_color};
+@define-color unfocused_selected_fg_color #fff;
 
 //WM
 
@@ -86,7 +86,7 @@ $_wm_highlight: if($variant=='light', $top_highlight,  // Sass gets mad if this 
 /* these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
 @define-color wm_title shade(#{$fg_color}, 1.8);
-@define-color wm_unfocused_title #{$backdrop_fg_color};
+@define-color wm_unfocused_title shade(#{$fg_color}, 1.8);
 @define-color wm_highlight #{"" + $_wm_highlight};
 @define-color wm_borders_edge #{"" + $borders_edge};
 

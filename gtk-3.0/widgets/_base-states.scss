@@ -4,13 +4,6 @@
 .background {
   color: $fg_color;
   background-color: $bg_color;
-
-  &:backdrop {
-    color: $backdrop_fg_color;
-    background-color: $backdrop_bg_color;
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-  }
 }
 
 /*
@@ -56,11 +49,6 @@ selection {
 %view {
   color: $text_color;
   background-color: $base_color;
-
-  &:backdrop {
-    color: $backdrop_text_color;
-    background-color: $backdrop_base_color;
-  }
 
   &:selected {
     &:focus, & {
@@ -112,8 +100,6 @@ label {
     @extend .dim-label;
 
     color: $fg_color;
-
-    &:backdrop { color: $backdrop_fg_color; }
   }
 
   row:selected &,
@@ -128,14 +114,6 @@ label {
     color: $insensitive_fg_color;
 
     selection { @extend %selected_items:disabled; }
-
-    &:backdrop { color: $backdrop_insensitive_color; }
-  }
-
-  &:backdrop {
-    color: $backdrop_fg_color;
-
-    selection { @extend %selected_items:backdrop; }
   }
 }
 
@@ -148,11 +126,6 @@ assistant {
   .sidebar {
     background-color: $base_color;
     border-top: 1px solid $borders_color;
-
-    &:backdrop {
-      background-color: $backdrop_base_color;
-      border-color: $backdrop_borders_color;
-    }
   }
 
   &.csd .sidebar { border-top-style: none; }
@@ -170,11 +143,6 @@ assistant {
   outline-color: transparentize($osd_fg_color, 0.7);
   text-shadow: 0 1px black;
   -gtk-icon-shadow: 0 1px black;
-
-  &:backdrop {
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-  }
 }
 
 *:selected {

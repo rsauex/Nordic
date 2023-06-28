@@ -19,12 +19,6 @@ scrollbar {
   &.left { border-right: 1px solid $borders_color; }
   &.right { border-left: 1px solid $borders_color; }
 
-  &:backdrop {
-    background-color: $backdrop_scrollbar_bg_color;
-    border-color: $backdrop_borders_color;
-    transition: $backdrop_transition;
-  }
-
   // slider
   slider {
     min-width: 6px;
@@ -38,8 +32,6 @@ scrollbar {
     &:hover { background-color: $scrollbar_slider_hover_color; }
 
     &:hover:active { background-color: $scrollbar_slider_active_color; }
-
-    &:backdrop { background-color: $backdrop_scrollbar_slider_color; }
 
     &:disabled { background-color: transparent; }
   }
@@ -138,17 +130,6 @@ scrollbar {
       @include button(undecorated);
 
       color: transparentize($scrollbar_slider_color, 0.8);
-    }
-    &:backdrop {
-      @include button(undecorated);
-
-      color: $backdrop_scrollbar_slider_color;
-
-      &:disabled {
-        @include button(undecorated);
-
-        color: transparentize($backdrop_scrollbar_slider_color, 0.8);
-      }
     }
   }
 

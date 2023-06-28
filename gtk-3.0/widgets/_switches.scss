@@ -22,29 +22,9 @@ switch {
     background-color: $insensitive_bg_color;
   }
 
-  &:backdrop {
-    background-color: $backdrop_bg_color;
-    transition: $backdrop_transition;
-
-    &:disabled { background-color: $insensitive_bg_color; }
-  }
-
-
   &:active,
   &:checked {
     background-color: $selected_bg_color;
-
-    &:backdrop {
-      background-color: $backdrop_selected_bg_color;
-
-      slider {
-        &:backdrop {
-          box-shadow:none;
-          background-color:transparentize($base_color, 0.1);
-          border:none;
-        }
-      }
-    }
   }
 
   // Handle
@@ -60,25 +40,14 @@ switch {
 
     box-shadow: 0 2px 2px transparentize(black, 0.8),
                 0 1px 2px transparentize(black, 0.8);
-
-    &:backdrop {
-      padding:2px;
-      box-shadow:none;
-      background-color:$base_color;
-    }
   }
 
   &:checked slider { }
-
-  &:backdrop {
-  }
 
   row:selected & {
     @if $variant == 'light' {
       box-shadow: none;
       border-color: $selected_borders_color;
-
-      &:backdrop { border-color: $selected_borders_color; }
 
       &.slider:dir(rtl) { border-left-color: $borders_color; }
       &.slider:dir(ltr) { border-right-color: $borders_color; }
@@ -93,10 +62,6 @@ switch {
     &:active,
     &:checked {
       background-color: $selected_bg_color;
-
-      &:backdrop {
-        background-color: $backdrop_selected_bg_color;
-      }
     }
   }
 }

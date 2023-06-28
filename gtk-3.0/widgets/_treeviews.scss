@@ -23,10 +23,8 @@ treeview.view {
       @extend %selected_items;
     }
 
-    &:backdrop, & {
-      border-left-color: mix($selected_fg_color, $selected_bg_color, 50%);
-      border-top-color: transparentize($fg_color, 0.9); // doesn't work unfortunatelly
-    }
+    border-left-color: mix($selected_fg_color, $selected_bg_color, 50%);
+    border-top-color: transparentize($fg_color, 0.9); // doesn't work unfortunatelly
   }
 
   &:disabled {
@@ -34,23 +32,14 @@ treeview.view {
 
     &:selected {
       color: mix($selected_fg_color, $selected_bg_color, 40%);
-      &:backdrop { color: mix($backdrop_selected_fg_color, $selected_bg_color, 30%); }
     }
-
-    &:backdrop { color: $backdrop_insensitive_color; }
   }
 
   &.separator {
     min-height: 2px;
     color: $bg_color;
-
-    &:backdrop { color: transparentize($bg_color, 0.9); }
   }
 
-  &:backdrop {
-    border-left-color: mix($backdrop_fg_color, $backdrop_bg_color, 50%);
-    border-top: $backdrop_bg_color;
-  }
   &:drop(active) {
     border-style: solid none;
     border-width: 1px;
@@ -74,13 +63,9 @@ treeview.view {
       color: mix($selected_fg_color, $selected_bg_color, 70%);
 
       &:hover { color: $selected_fg_color; }
-
-      &:backdrop { color: mix($backdrop_selected_fg_color, $selected_bg_color, 70%); }
     }
 
     &:checked { -gtk-icon-source: -gtk-icontheme('pan-down-symbolic'); }
-
-    &:backdrop { color: mix($backdrop_fg_color, $backdrop_base_color, 70%); }
   }
 
   &.progressbar { // progress bar in treeviews
@@ -108,27 +93,7 @@ treeview.view {
         background-image: linear-gradient(to bottom,
                                           $base_color,
                                           darken($base_color,10%));
-
-        &:backdrop {
-          @if $variant == 'light' {
-            color: $selected_bg_color;
-            border-color: $selected_borders_color; // otherwise it gets inherited by .view(?!?)
-          }
-
-          @else { border-color: $backdrop_base_color; }
-
-          background-color: $backdrop_base_color;
-        }
       }
-    }
-
-    &:backdrop {
-      @if $variant == 'light' { color: $backdrop_base_color; }
-
-      @else { border-color: $backdrop_base_color; }
-
-      background-image: none;
-      box-shadow: none;
     }
   }
 
@@ -180,7 +145,7 @@ treeview.view {
       }
     }
 
-    button:last-child { &:backdrop, & { border-right-style: none; }}
+    button:last-child {  border-right-style: none; }
   }
 
   button.dnd,
@@ -213,18 +178,5 @@ treeview.view {
   &:disabled {
     border-color: $bg_color;
     background-image: none;
-  }
-
-  &:backdrop {
-    border-color: $backdrop_bg_color;
-    border-style: none solid solid none;
-    color: mix($backdrop_fg_color, $backdrop_bg_color, 50%);
-    background-image: none;
-    background-color: $backdrop_base_color;
-
-    &:disabled {
-      border-color: $backdrop_bg_color;
-      background-image: none;
-    }
   }
 }

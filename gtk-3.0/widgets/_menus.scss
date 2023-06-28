@@ -36,8 +36,6 @@ menu,
 
   .csd & { border: none; }  // axes borders in a composited env
 
-  &:backdrop { background-color: $backdrop_menu_color; }
-
   menuitem {
     min-height: 17px;
     min-width: 40px;
@@ -51,13 +49,6 @@ menu,
 
     &:disabled {
       color: $insensitive_fg_color;
-      &:backdrop { color: $backdrop_insensitive_color; }
-    }
-
-    &:backdrop,
-    &:backdrop:hover {
-      color: $backdrop_fg_color;
-      background-color: transparent;
     }
 
     // submenu indicators
@@ -104,8 +95,6 @@ menu,
   //   }
 
   //   &:hover { background-color: mix($fg_color, $base_color, 10%); }
-
-  //   &:backdrop { background-color: $backdrop_menu_color; }
 
   //   &:disabled {
   //     color: transparent;

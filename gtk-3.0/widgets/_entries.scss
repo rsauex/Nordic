@@ -39,14 +39,6 @@ entry {
 
     &:disabled { @include entry(insensitive); }
 
-    &:backdrop {
-      @include entry(backdrop);
-
-      transition: $backdrop_transition;
-    }
-
-    &:backdrop:disabled { @include entry(backdrop-insensitive); }
-
     selection { &:focus, & { @extend %selected_items; }}
 
     // entry error and warning style
@@ -69,8 +61,6 @@ entry {
       &:hover { color: $fg_color; }
 
       &:active { color: $selected_bg_color; }
-
-      &:backdrop { color: mix($backdrop_fg_color, $backdrop_base_color, 80%); }
     }
 
     &:drop(active) {
@@ -85,8 +75,6 @@ entry {
 
       &:focus { @include entry(osd-focus); }
 
-      &:backdrop { @include entry(osd-backdrop); }
-
       &:disabled { @include entry(osd-insensitive); }
     }
   }
@@ -100,8 +88,6 @@ entry {
     border-color: $selected_bg_color;
     border-style: solid;
     box-shadow: none;
-
-    &:backdrop { background-color: transparent; }
   }
 
    // linked entries
@@ -126,11 +112,6 @@ entry {
     &:not(:disabled) + %entry:not(:disabled) {
       border-top-color: mix($borders_color, $base_color, 30%);
       background-image: linear-gradient(to bottom, $base_color, $base_color);
-
-      &:backdrop {
-        border-top-color: mix($backdrop_borders_color, $backdrop_base_color, 30%);
-        background-image: linear-gradient(to bottom, $backdrop_base_color, $backdrop_base_color);
-      }
     }
 
     // brighter border between linked insensitive entries

@@ -10,11 +10,6 @@ popover.background {
   .csd &, & { border: 1px solid $borders_color; }
 
   box-shadow: 0 4px 6px $menu_shadow_color;
-  
-  &:backdrop {
-    background-color: $backdrop_bg_color;
-    box-shadow: none;
-  }
 
   > list,
   > .view,

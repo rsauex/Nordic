@@ -21,20 +21,11 @@ progressbar {
   font-size: smaller;
   color: transparentize($fg_color, 0.6);
 
-  &:backdrop {
-    box-shadow: none;
-    transition: $backdrop_transition;
-  }
-
   trough { @extend %scale_trough; }
-
-  &:backdrop trough { @extend %scale_trough:backdrop; } // looks like states are not passed to the trough component here
 
   progress {
     @extend %scale_highlight;
   }
-
-  &:backdrop progress { @extend %scale_highlight:backdrop; } // states not passed here as well
 
   &.osd { // progressbar.osd used for epiphany page loading progress
     min-width: 3px;

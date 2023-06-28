@@ -14,8 +14,6 @@ calendar {
   &.header {
     border-bottom: 1px solid transparentize(black, 0.9);
     border-radius: 0;
-
-    &:backdrop { border-color: transparentize(black, 0.9); }
   }
 
   &.button {
@@ -29,12 +27,6 @@ calendar {
       color: $fg_color;
     }
 
-    &:backdrop {
-      @extend %undecorated_button;
-
-      color: transparentize($backdrop_fg_color,0.55);
-    }
-
     &:disabled {
       @extend %undecorated_button;
 
@@ -42,18 +34,10 @@ calendar {
     }
   }
 
-  &:indeterminate,
-  &:indeterminate:backdrop { color: gtkalpha(currentColor, 0.55); }
+  &:indeterminate{ color: gtkalpha(currentColor, 0.55); }
 
-  &.highlight,
-  &.highlight:backdrop {
+  &.highlight{
     font-size: smaller;
     color: $fg_color;
-  }
-
-
-  &:backdrop {
-    color: $backdrop_text_color;
-    border-color: $backdrop_borders_color;
   }
 }

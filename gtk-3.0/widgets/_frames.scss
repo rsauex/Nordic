@@ -10,15 +10,11 @@ frame > border,
   border: 1px solid $borders_color;
 
   &.flat { border-style: none; }
-
-  &:backdrop { border-color: $backdrop_borders_color; }
 }
 
 actionbar > revealer >  box {
   padding: 6px;
   border-top: 1px solid $borders_color;
-
-  &:backdrop { border-color: $backdrop_borders_color; }
 }
 
 scrolledwindow {
@@ -31,26 +27,18 @@ scrolledwindow {
   overshoot {
     &.top {
       @include overshoot(top);
-
-      &:backdrop { @include overshoot(top, backdrop); }
     }
 
     &.bottom {
       @include overshoot(bottom);
-
-      &:backdrop { @include overshoot(bottom, backdrop); }
     }
 
     &.left {
       @include overshoot(left);
-
-      &:backdrop { @include overshoot(left, backdrop); }
     }
 
     &.right {
       @include overshoot(right);
-
-      &:backdrop { @include overshoot(right, backdrop); }
     }
   }
 
@@ -72,12 +60,6 @@ scrolledwindow {
     background-color: $scrollbar_bg_color;
 
     &:dir(rtl) { border-image-slice: 0 1 0 0; }
-
-    &:backdrop {
-      border-image-source: linear-gradient(to bottom, $backdrop_borders_color 1px, transparent 1px);
-      background-color: $backdrop_scrollbar_bg_color;
-      transition: $backdrop_transition;
-    }
   }
 }
 

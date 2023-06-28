@@ -8,11 +8,6 @@
     border-width: 1px;
     background-color: darken($base_color, 5%);
 
-    &:backdrop {
-      border-color: $backdrop_borders_color;
-      background-color: $backdrop_bg_color;
-    }
-
     tabs { margin: 0px; }
 
     &.top {
@@ -20,8 +15,6 @@
       > tabs {
         margin-bottom: -2px;
         > tab {
-
-          &:backdrop { box-shadow: none; }
 
           &:checked {
               background-color: $base_color;
@@ -36,12 +29,8 @@
       > tabs {
         margin-top: -2px;
         > tab {
-
-
-          &:backdrop { box-shadow: none; }
-
-          &:checked { 
-            background-color: $base_color; 
+          &:checked {
+            background-color: $base_color;
             box-shadow: -1px 0 0 $borders_color,
             0px 1px 0 $borders_color,
             1px 0 0 $borders_color;
@@ -55,12 +44,8 @@
       > tabs {
         margin-right: -2px;
         > tab {
-
-
-          &:backdrop { box-shadow: none; }
-
-         &:checked { 
-            background-color: $base_color; 
+         &:checked {
+            background-color: $base_color;
             box-shadow: 0px 1px 0 $borders_color,
             0px -1px 0 $borders_color,
             0px 1px 0 $borders_color;
@@ -74,12 +59,8 @@
       > tabs {
         margin-left: -2px;
         > tab {
-
-
-          &:backdrop { box-shadow: none; }
-
-          &:checked { 
-            background-color: $base_color; 
+          &:checked {
+            background-color: $base_color;
             box-shadow: 0px 1px 0 $borders_color,
             0px -1px 0 $borders_color,
             1px 0 0 $borders_color;
@@ -143,7 +124,7 @@
       min-width: 14px;
       border-radius: 0;
 
-      &:hover:not(:active):not(:backdrop) {
+      &:hover:not(:active) {
         background-clip: padding-box;
         background-image: none;
         background-color: transparentize(white, 0.7);
@@ -176,15 +157,6 @@
         }
       }
 
-      &:backdrop {
-        color: mix($backdrop_fg_color, $backdrop_bg_color, 60%);
-
-        &.reorderable-page {
-          border-color: transparent;
-          background-color: transparent;
-        }
-      }
-
       &:checked {
         color: $fg_color;
         box-shadow: -1px 0 0 $borders_color,
@@ -198,27 +170,17 @@
         }
       }
 
-      &:backdrop:checked {
-        color: $backdrop_fg_color;
-        &.reorderable-page {
-          border-color: $backdrop_borders_color;
-          background-color: $backdrop_base_color;
-        }
-      }
-
       // colors the button like the label, overridden otherwise
       button.flat {
-        &:hover {  
+        &:hover {
           background: transparent;
           box-shadow: none;
-          color: $red; 
+          color: $red;
         }
 
-        &, &:backdrop { 
-          background: transparent;
-          border: none;
-          color: gtkalpha(currentColor, 0.3); 
-        }
+        background: transparent;
+        border: none;
+        color: gtkalpha(currentColor, 0.3);
 
         padding: 0;
         margin-top: 4px;
@@ -291,7 +253,5 @@
 
   > stack:not(:only-child) { // the :not(:only-child) is for "hidden" notebooks
     background-color: $base_color;
-
-    &:backdrop { background-color: $backdrop_base_color; }
   }
 }

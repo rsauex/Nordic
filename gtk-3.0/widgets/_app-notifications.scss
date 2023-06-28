@@ -12,11 +12,6 @@
                                                transparent 2px);
   background-clip: padding-box;
 
-  &:backdrop {
-    background-image: none;
-    transition: $backdrop_transition;
-  }
-
   button { @extend %osd_button; }
 
   border { border: none; }

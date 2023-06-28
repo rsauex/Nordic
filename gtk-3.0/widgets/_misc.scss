@@ -7,8 +7,6 @@
 
   &:hover { -gtk-icon-effect: highlight; }
 
-  &:backdrop { background-color: darken($bg_color,7%); }
-
   rubberband { @extend rubberband; }
 }
 
@@ -26,8 +24,6 @@
       background-color: transparentize($fg_color,0.9);
       border-radius: 5px;
     }
-
-    &:backdrop { &:hover, &:disabled, & { @extend %undecorated_button; }}
   }
 }
 
@@ -45,11 +41,6 @@ assistant {
     border-top: 1px solid $borders_color;
 
     border-bottom-left-radius:4px;
-
-    &:backdrop {
-      background-color: $backdrop_base_color;
-      border-color: $backdrop_borders_color;
-    }
   }
 
   &.csd .sidebar { border-top-style: none; }

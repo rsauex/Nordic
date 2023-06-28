@@ -3,13 +3,13 @@
  ************/
  .nautilus-window {
   .frame{
-    *:selected, *:selected:backdrop{
+    *:selected {
       background: transparent;
       color: $selected_bg_color;
       label {
         color: $selected_bg_color;
       }
-    } 
+    }
   }
   paned {
     > separator { background-image: none; }
@@ -17,11 +17,6 @@
   .sidebar {
     background-color: transparent;
     // background-image: none;
-
-    &:backdrop {
-      background-color: transparent;
-      // background-image: none;
-    }
 
     .list-row {
       button {
@@ -49,22 +44,18 @@
   }
   &.background {
     background-color: transparentize(darken($base_color,3%),0.05);
-    &:backdrop {
-      background-color: transparentize(darken($base_color,3%),0.05);
-    }
   }
 
   notebook {
     > stack:only-child { // the :not(:only-child) is for "hidden" notebooks
         background-color: $base_color;
-        &:backdrop { background-color: $backdrop_base_color; }
     }
   }
 
   searchbar {
     border-top: 1px solid rgba(0, 0, 0, 0.12);
   }
-  
+
  .searchbar-container {
     margin-top: -1px;
   }
@@ -154,12 +145,12 @@
     background: transparent;
     border: none;
     box-shadow: none;
-  } 
+  }
   .arrow.button.toggle {
     transition: none;
     box-shadow: none;
     &:hover { border-color: $selected_bg_color; }
-  } 
+  }
 }
 
 /*******************

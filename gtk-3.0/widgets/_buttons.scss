@@ -62,26 +62,7 @@ button {
       transition-duration: 50ms;
     }
 
-    &:backdrop {
-      &.flat, & {
-        @include button(backdrop);
-
-        transition: $backdrop_transition;
-        -gtk-icon-effect: none;
-
-        &:active,
-        &:checked { @include button(backdrop-active); }
-
-        &:disabled {
-          @include button(backdrop-insensitive);
-
-          &:active,
-          &:checked { @include button(backdrop-insensitive-active); }
-        }
-      }
-    }
-
-    &.flat { &:backdrop, &:disabled, &:backdrop:disabled { @include button(undecorated); }}
+    &.flat:disabled { @include button(undecorated); }
 
     &:disabled {
       @include button(insensitive);
@@ -130,8 +111,6 @@ button {
       &.flat:not(:active):not(:checked):not(:hover):not(disabled) {
         color: $selected_fg_color;
         border-color: transparent;
-
-        &:backdrop { color: if($variant=='light', $backdrop_base_color, $backdrop_fg_color); }
       }
     }
   }
@@ -169,15 +148,7 @@ button {
     }
 
     &:disabled {
-      &:backdrop, & {
-        @include button(osd-insensitive);
-
-        border: none;
-      }
-    }
-
-    &:backdrop {
-      @include button(osd-backdrop);
+      @include button(osd-insensitive);
 
       border: none;
     }
@@ -191,11 +162,9 @@ button {
     &:hover { @include button(osd-hover); }
 
     &:active,
-    &:checked { &:backdrop, & { @include button(osd-active); }}
+    &:checked {  @include button(osd-active); }
 
-    &:disabled { &:backdrop, & { @include button(osd-insensitive); }}
-
-    &:backdrop { @include button(osd-backdrop); }
+    &:disabled { @include button(osd-insensitive); }
 
     &.flat {
       @include button(undecorated);
@@ -213,8 +182,6 @@ button {
         box-shadow: none;
       }
 
-      &:backdrop { @include button(undecorated); }
-
       &:active,
       &:checked { @include button(osd-active); }
     }
@@ -225,11 +192,11 @@ button {
                              (destructive-action, $destructive_color) {
     &.#{$b_type} {
       border: none;
-      
+
       @if $b_type ==  suggested-action {
         @include button(rounded, $b_color, white);
       } @else {
-        @include button(rounded-red, $b_color, white); 
+        @include button(rounded-red, $b_color, white);
       }
 
       &.flat {
@@ -243,28 +210,10 @@ button {
       &:active,
       &:checked { @include button(active, $b_color, white); }
 
-      &:backdrop,
-      &.flat:backdrop {
-        @include button(backdrop, $b_color, white);
-        label { color: transparentize(white, 0.5);}
-        &:active,
-        &:checked { @include button(backdrop-active, $b_color, white); }
+      &.flat:disabled {
+        @include button(undecorated);
 
-        &:disabled {
-          @include button(backdrop-insensitive, $b_color, white);
-          label { color: transparentize(white, 0.5);}
-
-          &:active,
-          &:checked { @include button(backdrop-insensitive-active, $b_color, white); }
-        }
-      }
-
-      &.flat {
-        &:backdrop, &:disabled, &:backdrop:disabled {
-          @include button(undecorated);
-
-          color: transparentize($b_color, 0.2);
-        }
+        color: transparentize($b_color, 0.2);
       }
 
       &:disabled {
@@ -276,15 +225,13 @@ button {
 
       .osd & {
         @include button(osd, $b_color);
-        
+
         &:hover { @include button(osd-hover, $b_color); }
 
         &:active,
-        &:checked { &:backdrop, & { @include button(osd-active, $b_color); }}
+        &:checked { @include button(osd-active, $b_color); }
 
-        &:disabled { &:backdrop, & { @include button(osd-insensitive, $b_color); }}
-
-        &:backdrop { @include button(osd-backdrop, $b_color); }
+        &:disabled { @include button(osd-insensitive, $b_color); }
       }
     }
   }
@@ -337,14 +284,14 @@ button {
   }
 
   //inline-toolbar buttons
-  .inline-toolbar &, .inline-toolbar &:backdrop {
+  .inline-toolbar & {
     border-radius: 2px;
     border-width: 1px;
     @extend %linked;
   }
 
  .primary-toolbar &, .primary-toolbar .raised & { // tango icons don't need shadows
-    -gtk-icon-shadow: none; 
+    -gtk-icon-shadow: none;
 
     &:hover,
     &:focus {
@@ -355,14 +302,12 @@ button {
   .linked > &,
   .linked > &:hover,
   .linked > &:active,
-  .linked > &:checked,
-  .linked > &:backdrop { @extend %linked; }
+  .linked > &:checked { @extend %linked; }
 
   .linked.vertical > &,
   .linked.vertical > &:hover,
   .linked.vertical > &:active,
-  .linked.vertical > &:checked,
-  .linked.vertical > &:backdrop { @extend %linked_vertical; }
+  .linked.vertical > &:checked { @extend %linked_vertical; }
 }
 
 %needs_attention {
@@ -385,8 +330,6 @@ button {
   @if $variant == 'light' { background-position: right 3px, right 4px; }
 
   @else { background-position: right 3px, right 2px; }
-
-  &:backdrop { background-size: 6px 6px, 0 0;}
 
   &:dir(rtl) {
     @if $variant == 'light' { background-position: left 3px, left 4px; }
@@ -418,31 +361,6 @@ toolbar {
     &:active,
     &:checked { color: transparentize(darken($selected_fg_color, 5%),0.7); }
   }
-
-  &:backdrop {
-    color: $backdrop_text_color;
-
-    &:active,
-    &:checked { color: darken($selected_fg_color, 5%); }
-
-    &:disabled {
-      color: $backdrop_text_color;
-
-      &:active,
-      &:checked { color: transparentize(darken($selected_fg_color, 5%),0.7); }
-    }
-  }
-}
-
-// More inline toolbar buttons
-toolbar.inline-toolbar toolbutton,
-toolbar.inline-toolbar toolbutton:backdrop {
-  > button.flat {
-    &:backdrop {
-      border-color: transparent;
-      box-shadow: none;
-    }
-  }
 }
 
 %linked_middle {
@@ -451,7 +369,7 @@ toolbar.inline-toolbar toolbutton:backdrop {
   border-right-style: none;
   box-shadow: none;
   &:disabled {
-    @include button(insensitive, $base_color, $text_color); 
+    @include button(insensitive, $base_color, $text_color);
     color: $insensitive_fg_color;
   }
 }
@@ -526,9 +444,6 @@ modelbutton.flat,
 
   &:selected { @extend %selected_items; }
 
-  &:backdrop,
-  &:backdrop:hover { @extend %undecorated_button; }
-
   // FIXME: remove the following when the checks/radios rewrite lands
   check:last-child,
   radio:last-child { margin-left: 8px; }
@@ -556,8 +471,7 @@ button.color {
     @if $variant == 'light' {
       box-shadow: none;
 
-      &:disabled,
-      &:backdrop { box-shadow: none; }
+      &:disabled { box-shadow: none; }
     }
   }
 }
@@ -565,9 +479,6 @@ button.color {
 notebook, list, .view, popover {
   button {
     box-shadow: none;
-    &:backdrop {
-      box-shadow: none;
-    }
   }
   .linked > button {
     box-shadow: none;
