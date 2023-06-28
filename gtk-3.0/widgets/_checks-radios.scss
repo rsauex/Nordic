@@ -118,12 +118,12 @@
                   (':disabled:backdrop', '-unchecked-backdrop-insensitive') {
   .view.content-view check#{$s},
   .view.content-view.check#{$s}{
-    -gtk-icon-source: -gtk-scaled(url("../assets/selection-mode-checkbox#{$un}.png"),url("../assets/checkbox#{$un}@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("../assets/checkbox#{$un}.png"),url("../assets/checkbox#{$un}@2.png"));
     -gtk-icon-shadow: none;
   }
   .view.content-view radio#{$s},
   .view.content-view.radio#{$s}{
-    -gtk-icon-source: -gtk-scaled(url("../assets/selection-mode-radio#{$un}.png"),url("../assets/radio#{$un}@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("../assets/radio#{$un}.png"),url("../assets/radio#{$un}@2.png"));
     -gtk-icon-shadow: none;
   }
 }

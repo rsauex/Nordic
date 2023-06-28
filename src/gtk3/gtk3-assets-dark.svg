@@ -462,7 +462,7 @@
     </g>
     <g
        style="display:none"
-       inkscape:label="Baseplate checkbox-checked-insensitive-backdrop"
+       inkscape:label="Baseplate checkbox-checked-backdrop-insensitive"
        id="g4626"
        inkscape:groupmode="layer">
       <text
@@ -488,7 +488,7 @@
            y="26.115234"
            x="126.48828"
            sodipodi:role="line"
-           id="tspan4634">checkbox-checked-insensitive-backdrop-dark</tspan></text>
+           id="tspan4634">checkbox-checked-backdrop-insensitive-dark</tspan></text>
       <rect
          style="display:inline;overflow:visible;visibility:visible;fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
          id="rect4636"
@@ -736,7 +736,7 @@
     <g
        inkscape:groupmode="layer"
        id="g4614"
-       inkscape:label="Baseplate checkbox-unchecked-insensitive-backdrop"
+       inkscape:label="Baseplate checkbox-unchecked-backdrop-insensitive"
        style="display:none">
       <text
          id="text4616"
@@ -761,7 +761,7 @@
            sodipodi:role="line"
            x="126.48828"
            y="26.115234"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'">checkbox-unchecked-insensitive-backdrop-dark</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'">checkbox-unchecked-backdrop-insensitive-dark</tspan></text>
       <rect
          inkscape:label="16x16"
          y="176"
@@ -1008,7 +1008,7 @@
     </g>
     <g
        style="display:none"
-       inkscape:label="Baseplate checkbox-mixed-insensitive-backdrop"
+       inkscape:label="Baseplate checkbox-mixed-backdrop-insensitive"
        id="g4564"
        inkscape:groupmode="layer">
       <text
@@ -1034,7 +1034,7 @@
            y="26.115234"
            x="126.48828"
            sodipodi:role="line"
-           id="tspan4572">checkbox-mixed-insensitive-backdrop-dark</tspan></text>
+           id="tspan4572">checkbox-mixed-backdrop-insensitive-dark</tspan></text>
       <rect
          style="display:inline;overflow:visible;visibility:visible;fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
          id="rect4574"
@@ -1282,7 +1282,7 @@
     <g
        inkscape:groupmode="layer"
        id="g4578"
-       inkscape:label="Baseplate radio-checked-insensitive-backdrop "
+       inkscape:label="Baseplate radio-checked-backdrop-insensitive "
        style="display:none">
       <text
          id="text4580"
@@ -1307,7 +1307,7 @@
            sodipodi:role="line"
            x="126.48828"
            y="26.115234"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'">radio-checked-insensitive-backdrop-dark</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'">radio-checked-backdrop-insensitive-dark</tspan></text>
       <rect
          inkscape:label="16x16"
          y="176"
@@ -1554,7 +1554,7 @@
     </g>
     <g
        style="display:none"
-       inkscape:label="Baseplate radio-unchecked-insensitive-backdrop"
+       inkscape:label="Baseplate radio-unchecked-backdrop-insensitive"
        id="g4590"
        inkscape:groupmode="layer">
       <text
@@ -1580,7 +1580,7 @@
            y="26.115234"
            x="126.48828"
            sodipodi:role="line"
-           id="tspan4598">radio-unchecked-insensitive-backdrop-dark</tspan></text>
+           id="tspan4598">radio-unchecked-backdrop-insensitive-dark</tspan></text>
       <rect
          style="display:inline;overflow:visible;visibility:visible;fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
          id="rect4600"
@@ -1828,7 +1828,7 @@
     <g
        inkscape:groupmode="layer"
        id="g4602"
-       inkscape:label="Baseplate radio-mixed-insensitive-backdrop "
+       inkscape:label="Baseplate radio-mixed-backdrop-insensitive "
        style="display:none">
       <text
          id="text4604"
@@ -1853,7 +1853,7 @@
            sodipodi:role="line"
            x="126.48828"
            y="26.115234"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'">radio-mixed-insensitive-backdrop-dark</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold'">radio-mixed-backdrop-insensitive-dark</tspan></text>
       <rect
          inkscape:label="16x16"
          y="176"
