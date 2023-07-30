@@ -14,7 +14,7 @@ style "gimp_spin_scale" {
       function        = BOX
       state           = NORMAL
       detail          = "spinbutton_up"
-      overlay_file    = "assets/spin-up.png"
+      overlay_file    = "assets/spin-up-normal.png"
       overlay_stretch = FALSE
     }
 
@@ -22,7 +22,7 @@ style "gimp_spin_scale" {
       function        = BOX
       state           = PRELIGHT
       detail          = "spinbutton_up"
-      overlay_file    = "assets/spin-up.png"
+      overlay_file    = "assets/spin-up-normal.png"
       overlay_stretch = FALSE
     }
 
@@ -30,7 +30,7 @@ style "gimp_spin_scale" {
       function        = BOX
       state           = ACTIVE
       detail          = "spinbutton_up"
-      overlay_file    = "assets/spin-up.png"
+      overlay_file    = "assets/spin-up-normal.png"
       overlay_stretch = FALSE
     }
 
@@ -46,7 +46,7 @@ style "gimp_spin_scale" {
       function        = BOX
       state           = NORMAL
       detail          = "spinbutton_down"
-      overlay_file    = "assets/spin-down.png"
+      overlay_file    = "assets/spin-down-normal.png"
       overlay_stretch = FALSE
     }
 
@@ -54,7 +54,7 @@ style "gimp_spin_scale" {
       function        = BOX
       state           = PRELIGHT
       detail          = "spinbutton_down"
-      overlay_file    = "assets/spin-down.png"
+      overlay_file    = "assets/spin-down-normal.png"
       overlay_stretch = FALSE
     }
 
@@ -62,7 +62,7 @@ style "gimp_spin_scale" {
       function        = BOX
       state           = ACTIVE
       detail          = "spinbutton_down"
-      overlay_file    = "assets/spin-down.png"
+      overlay_file    = "assets/spin-down-normal.png"
       overlay_stretch = FALSE
     }
 
