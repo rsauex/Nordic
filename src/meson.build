@@ -1,9 +1,6 @@
 gtk_assets = run_command(
   python3,
   meson.current_source_dir() / 'list-assets.py',
-  meson.current_source_dir() / 'gtk3' / 'gtk3-assets.svg',
-  meson.current_source_dir() / 'gtk3' / 'gtk3-assets-dark.svg',
-  # meson.current_source_dir() / 'gtk3' / 'gtk3-selection.svg',
   meson.current_source_dir() / 'wm' / 'wm-assets.svg',
   check : true
 ).stdout().strip().split('\n')

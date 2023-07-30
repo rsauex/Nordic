@@ -22,9 +22,11 @@ else
   sassc_options = ['--style', 'compact']
 endif
 
+assets_svg = meson.current_source_dir() / 'assets.svg'
+
 subdir('src')
 subdir('gtk-2.0')
 subdir('gtk-3.0')
 subdir('gtk-4.0')
-subdir('metacity-1')
-subdir('kde/kvantum')
+subdir('kvantum')
+subdir('assets')
